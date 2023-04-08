@@ -1,0 +1,25 @@
+[package]
+name = "Minimal"
+version = "0.1.0"
+edition = "2021"
+authors = ["Krebs <cristian_ricci@outlook.it>"]
+description = "An easier way for access page element using web_sys abbreviation."
+license = "MIT OR Apache-2.0"
+readme = "readme.md"
+repository = "https://github.com/xKrebs/Minimal.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm-bindgen = "0.2.84"
+
+[dependencies.web-sys]
+version = "0.3.61"
+# We need to enable all the web-sys features we want to use!
+features = [
+    "Document",
+    "HtmlElement",
+    "Window",
+    "NodeList",
+    "Element",
+]
