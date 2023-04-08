@@ -1,6 +1,6 @@
 [package]
 name = "Minimal"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Krebs <cristian_ricci@outlook.it>"]
 description = "An easier way for access page element using web_sys abbreviation."
