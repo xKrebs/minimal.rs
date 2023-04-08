@@ -12,20 +12,28 @@ pub mod utils {
     use wasm_bindgen::prelude::*;
     use web_sys::{Document, Element, HtmlElement, NodeList, Window};
 
-    /// Create a Window or a Document.
+    /// Create a Window.
     ///
     /// # Examples
     ///
     /// ```
     /// let window = minimal::window();
-    /// let document = minimal::document();
     ///
     /// assert_eq!(<Window>, window);
-    /// assert_eq!(<Document>, document);
     /// ```
     pub fn window() -> Window {
         web_sys::window().expect("no window found")
     }
+
+    /// Create a Document.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// let document = minimal::document();
+    ///
+    /// assert_eq!(<Document>, document);
+    /// 
     pub fn document() -> Document {
         web_sys::window().expect("no window found").document_page()
     }
