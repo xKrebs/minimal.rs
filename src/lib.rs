@@ -1,6 +1,7 @@
 //! # minimal
 //! `minimal` is a collection of utilities to get Element and HtmlElement
 //!  more convenient and easier.
+
 pub use utils::document;
 pub use utils::window;
 pub use utils::MinimalDocument;
@@ -11,6 +12,7 @@ pub use utils::MinimalWindow;
 pub mod utils {
     use wasm_bindgen::prelude::*;
     use web_sys::{Document, Element, HtmlElement, NodeList, Window};
+    //use crate::{MinimalDocument, MinimalElement, MinimalHtml, MinimalList, MinimalWindow};
 
     /// Create a Window.
     ///
@@ -21,6 +23,8 @@ pub mod utils {
     ///
     /// assert_eq!(<Window>, window);
     /// ```
+    /// 
+
     pub fn window() -> Window {
         web_sys::window().expect("no window found")
     }
@@ -34,6 +38,7 @@ pub mod utils {
     ///
     /// assert_eq!(<Document>, document);
     /// 
+
     pub fn document() -> Document {
         web_sys::window().expect("no window found").document_page()
     }
