@@ -19,7 +19,7 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let window = minimal::window();
+    /// let window = Minimal::window();
     ///
     /// assert_eq!(<Window>, window);
     /// ```
@@ -34,7 +34,7 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let document = minimal::document();
+    /// let document = Minimal::document();
     ///
     /// assert_eq!(<Document>, document);
     /// 
@@ -48,7 +48,7 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let window = minimal::window();
+    /// let window = Minimal::window();
     /// let document = window.document_page();
     ///
     /// assert_eq!(<Document>, document);
@@ -66,7 +66,7 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let window = minimal::window();
+    /// let window = Minimal::window();
     /// let document = window.document_page();
     /// let h1_el = document.query_selector_el("h1");
     /// let h1_html = document.query_selector_html("h1");
@@ -89,7 +89,7 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let document = minimal::document();
+    /// let document = Minimal::document();
     /// let h1_el = document.query_selector_el("h1");
     /// assert_eq!(<Element>, h1_el);
     /// assert_eq!(<HtmlElement>, h1_el.to_html());
@@ -104,7 +104,7 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let document = minimal::document();
+    /// let document = Minimal::document();
     /// let h1_html = document.query_selector_html("h1");
     /// if h1_html.has_class("test"){
     /// 	h1_html.remove_class("test");
@@ -126,7 +126,7 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let document = minimal::document();
+    /// let document = Minimal::document();
     /// let h1_list = document.query_selector_list("h1");
     /// assert_eq!(<NodeList>, h1_list);
     /// let element = h1_list.get_html(5);

@@ -1,5 +1,5 @@
 [package]
-name = "minimal"
+name = "Minimal"
 version = "0.1.0"
 edition = "2021"
 authors = ["Krebs <cristian_ricci@outlook.it>"]

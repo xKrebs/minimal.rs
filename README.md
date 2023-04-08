@@ -9,10 +9,10 @@ A web_sys utils for get Element and HtmlElement more convenient and easier.
 
 ```rust
 ...
-use minimal::{MinimalDocument, MinimalList};
+use Minimal::{MinimalDocument, MinimalList};
 ...
 fn main() {
-    let document = minimal::document();
+    let document = Minimal::document();
     let all_p = document.query_selector_list("p"); //NodeList
     let all_p_clone = all_p.clone();
     for i in 0..all_p.length(){
