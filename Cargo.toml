@@ -6,7 +6,7 @@ authors = ["Krebs <cristian_ricci@outlook.it>"]
 description = "An easier way for access page element using web_sys abbreviation."
 license = "MIT OR Apache-2.0"
 readme = "readme.md"
-repository = "https://github.com/xKrebs/Minimal.rs"
+repository = "https://github.com/xKrebs/minimal.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
