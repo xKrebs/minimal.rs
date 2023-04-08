@@ -1,10 +1,7 @@
-//! # Minimal
+//! # minimal
 //!
 //! `Minimal` is a collection of utilities to get Element and HtmlElement
 //!  more convenient and easier.
-
-/// Adds one to the number given.
-// --snip--
 
 use wasm_bindgen::prelude::*;
 use web_sys::{HtmlElement, Element, Document, Window, NodeList};
@@ -233,4 +230,7 @@ impl MinimalList for NodeList{
             }
         }
     }
+}
+fn main(){
+
 }
