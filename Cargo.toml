@@ -1,6 +1,6 @@
 [package]
 name = "Minimal"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Krebs <cristian_ricci@outlook.it>"]
 description = "An easier way for access page element using web_sys abbreviation."
@@ -22,4 +22,11 @@ features = [
     "Window",
     "NodeList",
     "Element",
+    "ShadowRoot",
+    "HtmlSlotElement",
+    "Attr",
+    "MouseEvent",
+    "DomRect",
+    "CssStyleDeclaration",
+    "Location",
 ]
